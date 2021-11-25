@@ -1,0 +1,153 @@
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  background: #ebebeb;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.chat-container {
+  flex: 1;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.system-message {
+  font-size: 14px;
+  color: #cecece;
+  display: inline-block;
+}
+
+.user-message {
+  margin: 0 10px;
+  text-align: left;
+  font-size: 0;
+  display: flex;
+}
+
+.avatar {
+  width: 84px;
+  height: 84px;
+  border: #a5a5a7 1px solid;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user-message.other .text {
+  margin-left: 0px;
+}
+
+.user-message.other .text view {
+  /* display: inline-block; */
+}
+
+.text .nickname {
+  color: #737373;
+}
+
+.text .content {
+  font-size: 34px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.text .nickname {
+  font-size: 34px;
+}
+
+.user-message.other .text .content::after,
+.user-message.other .text .content::before {
+  right: 100%;
+  border-right-style: solid;
+}
+
+.input-panel {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 13px 20px 0;
+  background: #f5f5f7;
+  border-top: #d7d7d9 1px solid;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.send-input {
+  flex: 1;
+  height: 72px;
+  background: #fff;
+  border: #ddd 1px solid;
+  border-radius: 3px;
+  /* margin-right: 20px; */
+  box-sizing: border-box;
+  /* padding: 0 10px; */
+}
+.me{
+  padding-right:12px;
+  justify-content: flex-end;
+ 
+}
+ .me .text .nickname {  
+  justify-content: flex-end;
+  display: flex;
+} .me .text .content { 
+     padding-right:12px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+@media (max-width: 360px) {
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .text .content {
+    font-size: 18px; 
+    position: relative;
+  }
+
+  .text .nickname {
+    font-size: 22px;
+  }
+
+  .user-message.other .text .content::before {
+    top: 22px;
+    border-right-color: #ccc;
+  }
+
+  .user-message.other .text .content::after {
+    border: 14px solid transparent;
+    top: 23px;
+    border-right-color: #fff;
+  }
+
+  .input-panel {
+    height: 120px;
+    box-sizing: border-box;
+    padding: 13px 20px 0;
+    background: #f5f5f7;
+    border-top: #d7d7d9 1px solid;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .send-input {
+    flex: 1;
+    height: 92px;
+    background: #fff;
+    border: #ddd 1px solid;
+    border-radius: 3px;
+    /* margin-right: 20px; */
+    box-sizing: border-box;
+    /* padding: 0 10px; */
+  }
+}

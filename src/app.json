@@ -1,0 +1,12 @@
+{
+  "pages": [ 
+    "pages/chat/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "tiniapp.socket-io.adapter chat demo",
+    "navigationBarTextStyle": "black",
+     "enableCache": "NO"
+  }
+}

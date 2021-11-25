@@ -1,0 +1,15 @@
+{
+  "name": "com.chattie.app",
+  "author": {
+    "name": "/",
+    "url": "https://com.chattie.app.vn"
+  },
+  "version": "0.0.1",
+  "tiki": {
+    "appIdentifier": "com.chattie.app",
+    "buildNumber": 1
+  },
+  "dependencies": {
+    "tiniapp.socket-io.adapter": "^0.0.4"
+  }
+}
